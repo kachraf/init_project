@@ -31,6 +31,9 @@ build:
 bash:
 	$(EXEC) bash
 
+
+logs:
+	$(DOCKER_COMPOSE) logs --tail 50 --follow --timestamps api
 ##
 ## Composer
 ##---------------------------------------------------------------------------
